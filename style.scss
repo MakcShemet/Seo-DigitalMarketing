@@ -318,7 +318,7 @@ main {
     position: relative;
 }
 
-.product-img:nth-child(2) {
+.product:nth-child(2) .product-img {
     background-color: #F7E4E2;
 }
 
@@ -408,7 +408,8 @@ main {
 /*-- Teasers --*/
 .teasers {
     background-color: #222224;
-    padding: 104px 0;
+    padding-top: 104px;
+    padding-bottom: 104px
 }
 
 .container-teasers {
@@ -427,12 +428,18 @@ main {
     gap: 16px;
     color: #FBFBFB;
     text-align: center;
-}
-
-.title-teaser {
+    &__title {
     font-size: 20px;
     font-weight: 400;
 }
+    &__text {
+        font-size: 14px;
+        font-weight: 300;
+    }
+}
+
+
+
 
 
 /*-- Subscribe --*/

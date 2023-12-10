@@ -4,12 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Catalog</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -34,18 +28,20 @@
         </div>
         <div class="header-btn-group">
           <details class="menu-button">
-            <summary><svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="32"
-              height="23"
-              viewBox="0 0 32 23"
-              fill="none"
-            >
-              <path
-                d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
-                fill="#E8E8E8"
-              />
-            </svg></summary>
+            <summary>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="32"
+                height="23"
+                viewBox="0 0 32 23"
+                fill="none"
+              >
+                <path
+                  d="M0 23V20.31H32V23H0ZM0 12.76V10.07H32V12.76H0ZM0 2.69V0H32V2.69H0Z"
+                  fill="#E8E8E8"
+                />
+              </svg>
+            </summary>
             <nav class="menu">
               <h5 class="menu-heading">MENU</h5>
               <ul class="menu-item">
@@ -82,7 +78,7 @@
               </ul>
             </nav>
           </details>
-          <div class="user">
+          <a href="#" class="user">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="29"
@@ -95,8 +91,8 @@
                 fill="#E8E8E8"
               />
             </svg>
-          </div>
-          <div class="cart">
+          </a>
+          <a href="cart.html" class="cart">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="32"
@@ -109,7 +105,7 @@
                 fill="#E8E8E8"
               />
             </svg>
-          </div>
+          </a>
         </div>
       </div>
     </header>
@@ -124,80 +120,144 @@
       </nav>
     </div>
     <section class="products center">
-        <div class="filter-group">
-            <div class="filter filter-main">
-            <details class="filter-category">
-                <summary class="filter-name">FILTER
-                    <svg xmlns="http://www.w3.org/2000/svg" width="15" height="10" viewBox="0 0 15 10" fill="none">
-                    <path d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z" fill="black"/>
-                  </svg>
+      <div class="filter-group">
+        <div class="filter filter-main">
+          <details class="filter-category">
+            <summary class="filter-name">
+              FILTER
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="10"
+                viewBox="0 0 15 10"
+                fill="none"
+              >
+                <path
+                  d="M0.833333 10H4.16667C4.625 10 5 9.625 5 9.16667C5 8.70833 4.625 8.33333 4.16667 8.33333H0.833333C0.375 8.33333 0 8.70833 0 9.16667C0 9.625 0.375 10 0.833333 10ZM0 0.833333C0 1.29167 0.375 1.66667 0.833333 1.66667H14.1667C14.625 1.66667 15 1.29167 15 0.833333C15 0.375 14.625 0 14.1667 0H0.833333C0.375 0 0 0.375 0 0.833333ZM0.833333 5.83333H9.16667C9.625 5.83333 10 5.45833 10 5C10 4.54167 9.625 4.16667 9.16667 4.16667H0.833333C0.375 4.16667 0 4.54167 0 5C0 5.45833 0.375 5.83333 0.833333 5.83333Z"
+                  fill="black"
+                />
+              </svg>
+            </summary>
+            <nav class="filter-nav">
+              <details open>
+                <summary class="category-name">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="5"
+                    height="37"
+                    viewBox="0 0 5 37"
+                    fill="none"
+                  >
+                    <path d="M5 0H0V37H5V0Z" fill="#EF5B70" /></svg
+                  >CATEGORY
                 </summary>
-                <nav class="filter-nav">
-                    <details open>                        
-                        <summary class="category-name"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="37" viewBox="0 0 5 37" fill="none">
-                            <path d="M5 0H0V37H5V0Z" fill="#EF5B70"/>
-                          </svg>CATEGORY</summary>
-                        <ul class="products-type">
-                            <li class="list-item"><a href="#">Accessories</a></li>
-                            <li class="list-item"><a href="#">Bags</a></li>
-                            <li class="list-item"><a href="#">Denim</a></li>
-                            <li class="list-item"><a href="#">Hoodies & Sweatshirts</a></li>
-                            <li class="list-item"><a href="#">Jackets & Coats</a></li>
-                            <li class="list-item"><a href="#">Polos</a></li>
-                            <li class="list-item"><a href="#">Shirts</a></li>
-                            <li class="list-item"><a href="#">Shoes</a></li>
-                            <li class="list-item"><a href="#">Sweaters & Knits</a></li>
-                            <li class="list-item"><a href="#">T-Shirts</a></li>
-                            <li class="list-item"><a href="#">Tanks</a></li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary class="category-name"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="37" viewBox="0 0 5 37" fill="none">
-                            <path d="M5 0H0V37H5V0Z" fill="#EF5B70"/>
-                          </svg>BRAND</summary>
-                        <ul class="product-menu">
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                        </ul>
-                    </details>
-                    <details>
-                        <summary class="category-name"><svg xmlns="http://www.w3.org/2000/svg" width="5" height="37" viewBox="0 0 5 37" fill="none">
-                            <path d="M5 0H0V37H5V0Z" fill="#EF5B70"/>
-                          </svg>DESIGNER</summary>
-                        <ul class="product-menu">
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                            <li class="list-item"><a href="#"></a></li>
-                        </ul>
-                    </details>
-                </nav>
-            </details>
+                <ul class="products-type">
+                  <li class="list-item"><a href="#">Accessories</a></li>
+                  <li class="list-item"><a href="#">Bags</a></li>
+                  <li class="list-item"><a href="#">Denim</a></li>
+                  <li class="list-item">
+                    <a href="#">Hoodies & Sweatshirts</a>
+                  </li>
+                  <li class="list-item"><a href="#">Jackets & Coats</a></li>
+                  <li class="list-item"><a href="#">Polos</a></li>
+                  <li class="list-item"><a href="#">Shirts</a></li>
+                  <li class="list-item"><a href="#">Shoes</a></li>
+                  <li class="list-item"><a href="#">Sweaters & Knits</a></li>
+                  <li class="list-item"><a href="#">T-Shirts</a></li>
+                  <li class="list-item"><a href="#">Tanks</a></li>
+                </ul>
+              </details>
+              <details>
+                <summary class="category-name">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="5"
+                    height="37"
+                    viewBox="0 0 5 37"
+                    fill="none"
+                  >
+                    <path d="M5 0H0V37H5V0Z" fill="#EF5B70" /></svg
+                  >BRAND
+                </summary>
+                <ul class="product-menu">
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                </ul>
+              </details>
+              <details>
+                <summary class="category-name">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="5"
+                    height="37"
+                    viewBox="0 0 5 37"
+                    fill="none"
+                  >
+                    <path d="M5 0H0V37H5V0Z" fill="#EF5B70" /></svg
+                  >DESIGNER
+                </summary>
+                <ul class="product-menu">
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                  <li class="list-item"><a href="#"></a></li>
+                </ul>
+              </details>
+            </nav>
+          </details>
         </div>
-            <div class="another-filters">
-                <details class="filter">
-                    <summary class="filter-title">TRENDING NOW</summary>
-                </details>
-                <details class="filter" id="list-size">
-                    <summary class="filter-title">SIZE</summary>
-                    <ul class="filter-size">
-                      <li class="filter-size-checkbox"><input type="checkbox" name="XS" class="custom-checkbox" id="size-XS"><label for="XS">XS</label></li>
-                      <li class="filter-size-checkbox"><input type="checkbox" name="S" class="custom-checkbox" id="size-S"><label for="S">S</label></li>
-                      <li class="filter-size-checkbox"><input type="checkbox" name="M" class="custom-checkbox" id="size-M"><label for="M">M</label></li>
-                      <li class="filter-size-checkbox"><input type="checkbox" name="L" class="custom-checkbox" id="size-L"><label for="L">L</label></li>
-                    </ul>
-                </details>
-                <details class="filter">
-                    <summary class="filter-title">PRICE</summary>
-                </details>
-            </div>
+        <div class="another-filters">
+          <details class="filter">
+            <summary class="filter-title">TRENDING NOW</summary>
+          </details>
+          <details class="filter" id="list-size">
+            <summary class="filter-title">SIZE</summary>
+            <ul class="filter-size">
+              <li class="filter-size-checkbox">
+                <input
+                  type="checkbox"
+                  name="XS"
+                  class="custom-checkbox"
+                  id="size-XS"
+                /><label for="XS">XS</label>
+              </li>
+              <li class="filter-size-checkbox">
+                <input
+                  type="checkbox"
+                  name="S"
+                  class="custom-checkbox"
+                  id="size-S"
+                /><label for="S">S</label>
+              </li>
+              <li class="filter-size-checkbox">
+                <input
+                  type="checkbox"
+                  name="M"
+                  class="custom-checkbox"
+                  id="size-M"
+                /><label for="M">M</label>
+              </li>
+              <li class="filter-size-checkbox">
+                <input
+                  type="checkbox"
+                  name="L"
+                  class="custom-checkbox"
+                  id="size-L"
+                /><label for="L">L</label>
+              </li>
+            </ul>
+          </details>
+          <details class="filter">
+            <summary class="filter-title">PRICE</summary>
+          </details>
         </div>
+      </div>
       <div class="product-group">
         <article class="product">
           <div class="product-img">
@@ -308,66 +368,75 @@
           </div>
         </article>
         <article class="product">
-            <div class="product-img">
-              <div class="hover-effect">
-                <a href="#" class="cart-link"
-                  ><i class="icon-cart"></i>Add to Cart</a
-                >
-              </div>
-              <img src="images/men7.png" alt="" />
+          <div class="product-img">
+            <div class="hover-effect">
+              <a href="#" class="cart-link"
+                ><i class="icon-cart"></i>Add to Cart</a
+              >
             </div>
-            <div class="caption">
-              <h4 class="product-name">ELLERY X M'O CAPSULE</h4>
-              <p class="product_description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-              </p>
-              <p class="product-price">$52.00</p>
+            <img src="images/men7.png" alt="" />
+          </div>
+          <div class="caption">
+            <h4 class="product-name">ELLERY X M'O CAPSULE</h4>
+            <p class="product_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+            </p>
+            <p class="product-price">$52.00</p>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-img">
+            <div class="hover-effect">
+              <a href="#" class="cart-link"
+                ><i class="icon-cart"></i>Add to Cart</a
+              >
             </div>
-          </article>
-          <article class="product">
-            <div class="product-img">
-              <div class="hover-effect">
-                <a href="#" class="cart-link"
-                  ><i class="icon-cart"></i>Add to Cart</a
-                >
-              </div>
-              <img src="images/men8.png" alt="" />
+            <img src="images/men8.png" alt="" />
+          </div>
+          <div class="caption">
+            <h4 class="product-name">ELLERY X M'O CAPSULE</h4>
+            <p class="product_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+            </p>
+            <p class="product-price">$52.00</p>
+          </div>
+        </article>
+        <article class="product">
+          <div class="product-img">
+            <div class="hover-effect">
+              <a href="#" class="cart-link"
+                ><i class="icon-cart"></i>Add to Cart</a
+              >
             </div>
-            <div class="caption">
-              <h4 class="product-name">ELLERY X M'O CAPSULE</h4>
-              <p class="product_description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-              </p>
-              <p class="product-price">$52.00</p>
-            </div>
-          </article>
-          <article class="product">
-            <div class="product-img">
-              <div class="hover-effect">
-                <a href="#" class="cart-link"
-                  ><i class="icon-cart"></i>Add to Cart</a
-                >
-              </div>
-              <img src="images/men9.png" alt="" />
-            </div>
-            <div class="caption">
-              <h4 class="product-name">ELLERY X M'O CAPSULE</h4>
-              <p class="product_description">
-                Known for her sculptural takes on traditional tailoring,
-                Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
-              </p>
-              <p class="product-price">$52.00</p>
-            </div>
-          </article>
+            <img src="images/men9.png" alt="" />
+          </div>
+          <div class="caption">
+            <h4 class="product-name">ELLERY X M'O CAPSULE</h4>
+            <p class="product_description">
+              Known for her sculptural takes on traditional tailoring,
+              Australian arbiter of cool Kym Ellery teams up with Moda Operandi.
+            </p>
+            <p class="product-price">$52.00</p>
+          </div>
+        </article>
       </div>
       <div class="pagination">
         <a href="#" class="prev">
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
-          <path d="M7.995 2L2.995 7L7.995 12L6.995 14L-0.00500488 7L6.995 0L7.995 2Z" fill="black"/>
-        </svg>
-      </a>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="14"
+            viewBox="0 0 8 14"
+            fill="none"
+          >
+            <path
+              d="M7.995 2L2.995 7L7.995 12L6.995 14L-0.00500488 7L6.995 0L7.995 2Z"
+              fill="black"
+            />
+          </svg>
+        </a>
         <div class="pagination-numbers">
           <a href="#" class="pagination-number active">1</a>
           <a href="#" class="pagination-number">2</a>
@@ -379,73 +448,81 @@
           <a href="#" class="pagination-number">20</a>
         </div>
         <a href="#" class="next">
-          <svg xmlns="http://www.w3.org/2000/svg" width="8" height="14" viewBox="0 0 8 14" fill="none">
-            <path d="M-0.00500488 12L4.995 7L-0.00500488 2L0.994995 0L7.995 7L0.994995 14L-0.00500488 12Z" fill="black"/>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="8"
+            height="14"
+            viewBox="0 0 8 14"
+            fill="none"
+          >
+            <path
+              d="M-0.00500488 12L4.995 7L-0.00500488 2L0.994995 0L7.995 7L0.994995 14L-0.00500488 12Z"
+              fill="black"
+            />
           </svg>
         </a>
       </div>
     </section>
     <section class="teasers center">
-          <div class="teaser">
-            <img src="icons/delivery.svg" alt="delivery" class="icon-teaser" />
-            <h3 class="teaser__title">Free Delivery</h3>
-            <p class="teaser__text">
-              Worldwide delivery on all. Authorit tively morph
-              <br />next-generation innov tion with extensive models.
-            </p>
-          </div>
-          <div class="teaser">
-            <img src="icons/sales.svg" alt="sales" class="icon-teaser" />
-            <h3 class="teaser__title">Sales & discounts</h3>
-            <p class="teaser__text">
-              Worldwide delivery on all. Authorit tively morph
-              <br />next-generation innov tion with extensive models.
-            </p>
-          </div>
-          <div class="teaser">
-            <img src="icons/corona.svg" alt="quality" class="icon-teaser" />
-            <h3 class="teaser__title">Quality assurance</h3>
-            <p class="teaser__text">
-              Worldwide delivery on all. Authorit tively morph
-              <br />next-generation innov tion with extensive models.
-            </p>
-          </div>
-      </section>
-      <section class="subscribe">
-        <div class="bg-light"></div>
-        <div class="container-subscribe center">
-          <div class="review-block">
-            <img
-              src="images/photo-subscribe.svg"
-              alt="user-photo"
-              class="user-photo"
-            />
-            <p class="text-review">
-              “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
-              <i>a pulvinar purus condimentum</i>“
-            </p>
-          </div>
-          <div class="form-block">
-            <div class="title-subscribe">
-              <span>SUBSCRIBE</span><br />
-              <span>FOR OUR NEWLETTER AND PROMOTION</span>
-            </div>
-            <form action="" method="get" class="form-subscribe">
-              <input
-                type="email"
-                class="mail"
-                name="mail"
-                placeholder="Enter Your Email"
-              /><button type="submit" class="bnt-subscribe">Subscribe</button>
-            </form>
-          </div>
+      <div class="teaser">
+        <img src="icons/delivery.svg" alt="delivery" class="icon-teaser" />
+        <h3 class="teaser__title">Free Delivery</h3>
+        <p class="teaser__text">
+          Worldwide delivery on all. Authorit tively morph
+          <br />next-generation innov tion with extensive models.
+        </p>
+      </div>
+      <div class="teaser">
+        <img src="icons/sales.svg" alt="sales" class="icon-teaser" />
+        <h3 class="teaser__title">Sales & discounts</h3>
+        <p class="teaser__text">
+          Worldwide delivery on all. Authorit tively morph
+          <br />next-generation innov tion with extensive models.
+        </p>
+      </div>
+      <div class="teaser">
+        <img src="icons/corona.svg" alt="quality" class="icon-teaser" />
+        <h3 class="teaser__title">Quality assurance</h3>
+        <p class="teaser__text">
+          Worldwide delivery on all. Authorit tively morph
+          <br />next-generation innov tion with extensive models.
+        </p>
+      </div>
+    </section>
+    <section class="subscribe">
+      <div class="bg-light"></div>
+      <div class="container-subscribe center">
+        <div class="review-block">
+          <img
+            src="images/photo-subscribe.svg"
+            alt="user-photo"
+            class="user-photo"
+          />
+          <p class="text-review">
+            “Vestibulum quis porttitor dui! Quisque viverra nunc mi,
+            <i>a pulvinar purus condimentum</i>“
+          </p>
         </div>
-      </section>
-    </main>
+        <div class="form-block">
+          <div class="title-subscribe">
+            <span>SUBSCRIBE</span><br />
+            <span>FOR OUR NEWLETTER AND PROMOTION</span>
+          </div>
+          <form action="" method="get" class="form-subscribe">
+            <input
+              type="email"
+              class="mail"
+              name="mail"
+              placeholder="Enter Your Email"
+            /><button type="submit" class="bnt-subscribe">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
     <footer class="footer">
       <div class="container center">
         <div class="copyright">© 2022 Brand All Rights Reserved.</div>
-        <div class="social-block">          
+        <div class="social-block">
           <a href="#" class="social-icon">
             <svg
               xmlns="http://www.w3.org/2000/svg"

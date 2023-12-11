@@ -633,6 +633,9 @@ details[open] > .category-name {
       margin-left: 24px;
       border: 1px solid #eaeaea;
       text-align: center;
+      &::-webkit-inner-spin-button {
+        display: none;
+      }
     }
   }
 }

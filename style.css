@@ -633,6 +633,9 @@ details[open] > .category-name {
   border: 1px solid #eaeaea;
   text-align: center;
 }
+.property-variant.quantity::-webkit-inner-spin-button {
+  display: none;
+}
 
 .buttons-group {
   display: flex;

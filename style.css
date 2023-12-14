@@ -85,6 +85,23 @@ body {
   font-weight: 400;
 }
 
+.menu-button,
+.user,
+.cart {
+  display: block;
+  cursor: pointer;
+}
+.menu-button svg path,
+.user svg path,
+.cart svg path {
+  transition: 0.3s ease-in-out;
+}
+.menu-button:hover svg path,
+.user:hover svg path,
+.cart:hover svg path {
+  fill: #f16d7f;
+}
+
 .menu {
   background-color: #fff;
   padding: 16px;
@@ -826,6 +843,10 @@ form input:focus {
   width: -moz-max-content;
   width: max-content;
   margin-top: 20px;
+  transition: 0.4s ease-in-out;
+}
+.button_submit:hover {
+  scale: 1.05;
 }
 
 /*-- Teasers --*/

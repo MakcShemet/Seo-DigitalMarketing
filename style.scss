@@ -90,6 +90,19 @@ body {
   font-weight: 400;
 }
 
+.menu-button,
+.user,
+.cart {
+  display: block;
+  cursor: pointer;
+  & svg path {
+    transition: 0.3s ease-in-out;
+  }
+  &:hover svg path {
+    fill: $primaryColor;
+  }
+}
+
 .menu {
   background-color: $white;
   padding: 16px;
@@ -829,6 +842,10 @@ form input {
   border: none;
   width: max-content;
   margin-top: 20px;
+  transition: 0.4s ease-in-out;
+  &:hover {
+    scale: 1.05;
+  }
 }
 
 /*-- Teasers --*/

@@ -1156,6 +1156,9 @@ form input {
   .shipping-adress {
     width: auto;
   }
+  .product__details_block {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1180,6 +1183,9 @@ form input {
     padding-top: 24px;
     padding-bottom: 46px;
   }
+  .slide {
+    overflow: hidden;
+  }
   .container-offers {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -1191,6 +1197,9 @@ form input {
   .accesories {
     grid-column: span 1;
     height: 111px;
+  }
+  .filter {
+    font-size: 10px;
   }
   .product-img img,
   .form-subscribe {
@@ -1211,5 +1220,8 @@ form input {
   }
   .title-subscribe span:last-child {
     font-size: 14px;
+  }
+  .product__details_hr {
+    width: 175px;
   }
 }

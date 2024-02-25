@@ -491,6 +491,7 @@ details[open] > .category-name {
 .product-name {
   font-size: 13px;
   font-weight: 400;
+  color: black;
 }
 .product_description {
   color: #5d5d5d;
@@ -505,6 +506,7 @@ details[open] > .category-name {
 }
 .product:nth-child(2) .product-img {
   background-color: #f7e4e2;
+  height: 423.2px;
 }
 .product:nth-child(2) img.small {
   margin: 10px 0;
@@ -607,7 +609,7 @@ details[open] > .category-name {
   text-decoration: none;
 }
 
-.icon-cart::after {
+.icon-cart::before {
   content: url("icons/icon-cart.svg");
   margin-right: 11px;
 }

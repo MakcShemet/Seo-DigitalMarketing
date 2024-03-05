@@ -662,7 +662,7 @@ details[open] > .category-name {
   margin-bottom: 96px;
 }
 
-.products-cart {
+.products__preview {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -670,33 +670,34 @@ details[open] > .category-name {
   gap: 40px;
 }
 
-.product-cart {
+.cart-product {
   max-height: 306px;
   display: flex;
   align-items: start;
   justify-content: center;
   box-shadow: 16px 16px 28px rgba(0, 0, 0, 0.16);
 }
-.product-cart img {
+.cart-product img {
   max-width: 262px;
+  max-height: inherit;
 }
-.product-cart-info {
+.cart-product__info {
   display: flex;
   align-items: start;
   justify-content: space-between;
   gap: 57px;
   padding: 22px 22px 31px 31px;
 }
-.product-cart-name {
+.cart-product__name {
   color: #222;
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 11px;
 }
-.product-cart-properties {
+.cart-product__properties {
   max-width: 262px;
 }
-.product-cart-properties-list {
+.cart-product__properties_list {
   display: flex;
   flex-direction: column;
   gap: 6px;
@@ -704,30 +705,39 @@ details[open] > .category-name {
   margin-top: 31px;
   margin-bottom: 31px;
 }
-.product-cart-close {
+.cart-product__button_close {
   margin-top: 6px;
   border: none;
   background: transparent;
   cursor: pointer;
+  width: 16px;
+  height: 16px;
 }
-
-.property {
+.cart-product__property {
   color: #575757;
   font-size: 22px;
   font-weight: 400;
 }
-.property-variant {
+.cart-product__property_price, .cart-product__property_currency {
+  color: #f16d7f;
+}
+.cart-product__property_variant {
   color: #6f6e6e;
 }
-.property-variant.quantity {
+.cart-product__property_variant.quantity {
   max-width: 44px;
   padding: 2px 8px;
   margin-left: 24px;
   border: 1px solid #eaeaea;
   text-align: center;
 }
-.property-variant.quantity::-webkit-inner-spin-button {
+.cart-product__property_variant.quantity::-webkit-inner-spin-button {
   display: none;
+}
+
+.cart_items h2 {
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .buttons-group {
@@ -739,7 +749,7 @@ details[open] > .category-name {
   margin-bottom: 32px;
 }
 
-.button-cart {
+.button_cart {
   font-size: 14px;
   font-weight: 300;
   border: 1px solid #a4a4a4;
@@ -747,7 +757,7 @@ details[open] > .category-name {
   color: #000;
   transition: 0.3s ease-in-out;
 }
-.button-cart:hover {
+.button_cart:hover {
   background-color: #f16d7f;
   color: #fff;
 }
@@ -881,6 +891,10 @@ form input:focus {
 }
 .total-btn-checkout:hover {
   scale: 1.05;
+}
+
+.hidden {
+  display: none;
 }
 
 /*-- Registration page --*/

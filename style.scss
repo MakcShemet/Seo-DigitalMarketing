@@ -665,7 +665,7 @@ details[open] > .category-name {
   margin-bottom: 96px;
 }
 
-.products-cart {
+.products__preview {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -673,7 +673,7 @@ details[open] > .category-name {
   gap: 40px;
 }
 
-.product-cart {
+.cart-product {
   max-height: 306px;
   display: flex;
   align-items: start;
@@ -681,23 +681,24 @@ details[open] > .category-name {
   box-shadow: (16px 16px 28px rgba(0, 0, 0, 0.16));
   & img {
     max-width: 262px;
+    max-height: inherit;
   }
-  &-info {
+  &__info {
     display: flex;
     align-items: start;
     justify-content: space-between;
     gap: 57px;
     padding: 22px 22px 31px 31px;
   }
-  &-name {
+  &__name {
     color: $darkBGColor;
     font-size: 24px;
     font-weight: 400;
     margin-bottom: 11px;
   }
-  &-properties {
+  &__properties {
     max-width: 262px;
-    &-list {
+    &_list {
       display: flex;
       flex-direction: column;
       gap: 6px;
@@ -706,31 +707,40 @@ details[open] > .category-name {
       margin-bottom: 31px;
     }
   }
-  &-close {
+  &__button_close {
     margin-top: 6px;
     border: none;
     background: transparent;
     cursor: pointer;
+    width: 16px;
+    height: 16px;
   }
-}
-
-.property {
-  color: $DarkGray;
-  font-size: 22px;
-  font-weight: 400;
-  &-variant {
-    color: $filterTextColor;
-    &.quantity {
-      max-width: 44px;
-      padding: 2px 8px;
-      margin-left: 24px;
-      border: 1px solid #eaeaea;
-      text-align: center;
-      &::-webkit-inner-spin-button {
-        display: none;
+  &__property {
+    color: $DarkGray;
+    font-size: 22px;
+    font-weight: 400;
+    &_price,
+    &_currency {
+      color: $primaryColor;
+    }
+    &_variant {
+      color: $filterTextColor;
+      &.quantity {
+        max-width: 44px;
+        padding: 2px 8px;
+        margin-left: 24px;
+        border: 1px solid #eaeaea;
+        text-align: center;
+        &::-webkit-inner-spin-button {
+          display: none;
+        }
       }
     }
   }
+}
+.cart_items h2 {
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .buttons-group {
@@ -742,7 +752,7 @@ details[open] > .category-name {
   margin-bottom: 32px;
 }
 
-.button-cart {
+.button_cart {
   font-size: 14px;
   font-weight: 300;
   border: 1px solid $borderGray;
@@ -883,6 +893,10 @@ form input {
       scale: 1.05;
     }
   }
+}
+
+.hidden {
+  display: none;
 }
 
 /*-- Registration page --*/
